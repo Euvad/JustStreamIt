@@ -1,0 +1,41 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0) scale(1);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg) scale(1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg) scale(0);
+    }
+}
+
+@keyframes fadeandslide {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}

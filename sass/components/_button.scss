@@ -1,0 +1,17 @@
+button {
+    padding: 18px 25px 18px 25px;
+    font-size: 17px;
+    border-radius: 50px;
+    color: white;
+    //background: linear-gradient(to right, $colour-secondary 5%, $colour-primary 100%);
+    background: linear-gradient(356deg, $secondary-color 10%, $accent-color 80%);
+    background-size: 300% 100%;
+    box-shadow: 4px 4px 4px $secondary-color;
+    transition: all 1s ease;
+    z-index: 3;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}

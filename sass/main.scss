@@ -1,11 +1,18 @@
 //online imports
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 //local imports
 @import "./utils/variables";
-
+@import "./utils/animations";
 
 @import "./base/normalize";
 @import "./base/base";
 
 @import "./layout/header";
+
+@import "./pages/index/bestmovie";
+@import "./pages/index/carousel";
+@import "./pages/index/toprated";
+
+
+@import "./components/button";

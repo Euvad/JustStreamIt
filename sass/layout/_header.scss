@@ -1,0 +1,28 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+    &__leftside{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &__logo{
+            transform: scale(0.7);
+            filter: invert(100%);
+        }
+        &__title{
+            font-size: 50px;
+        }
+    }
+    &__rightside{
+        &__menu{
+            display: flex;
+            gap: 20px;
+            &__item{
+                font-size: 25px;
+            }
+        }
+    }
+}

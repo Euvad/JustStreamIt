@@ -8,6 +8,6 @@
     "sass": "sass --watch ./sass/main.scss:./sass/css/style.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vadim",
   "license": "ISC"
 }
