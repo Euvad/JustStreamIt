@@ -1,0 +1,41 @@
+section{
+    margin: 0 auto;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.smoothcarousel {
+    display: flex;
+    gap: 280px;
+    flex-direction: column;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.smoothcarousel__wrapper {
+    position: relative;
+    overflow-x: clip;
+}
+
+.hdcarousel_item {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    border-radius: 50px;
+    transition: all ease-in-out 800ms;
+}
+
+.hdcarousel_item_active {
+    top: -1rem;
+}
+.smoothcarousel__nav{
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+    &__button{
+        width: 150px;
+        height: 60px;
+    }
+}

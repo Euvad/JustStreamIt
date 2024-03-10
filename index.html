@@ -13,7 +13,7 @@
     <div class="loader-container" id="loader">
         <image class="loader-container__image" src="images/logo.png" alt="JustStreamIt Logo"></image>
     </div>
-    <div class="world">
+    <div class="world" id="home">
         <header class="header">
             <div class="header__leftside">
                 <h1 class="header__leftside__title">JustStreamIt</h1>
@@ -21,15 +21,15 @@
             </div>
             <div class="header__rightside">
                 <ul class="header__rightside__menu">
-                        <a class="header__rightside__menu__item" href="#">Home</a>
-                        <a class="header__rightside__menu__item" href="#">Category</a>
+                    <a class="header__rightside__menu__item" href="#home">Home</a>
+                    <a class="header__rightside__menu__item" href="#carousel">Category</a>
                 </ul>
             </div>
         </header>
         <section class="best-movie">
             <div class="best-movie__leftside" id="best-movie">
-                <h2 class="best-movie__leftside__title">#1 La Titane<!--DOM js--></h2>
-                <p class="best-movie__leftside__summary">Après une série de crimes inexpliqués, un père retrouve son fils disparu depuis 10 ans. Titane : Métal hautement résistant à la chaleur et à la corrosion, donnant des alliages très durs.<!--DOM js--></p>
+                <h2 class="best-movie__leftside__title"></h2>
+                <p class="best-movie__leftside__summary"></p>
                 <button class="best-movie__leftside__button" id="best-movie-button">More Details</button>
             </div>
             <aside class="best-movie__rightside">
@@ -38,31 +38,75 @@
         </section>
         <section class="top-rated" id="top-rated">
             <h1 class="top-rated__title">Films les mieux notés</h1>
-            <div class="scrollable-list" id="scrollable-list">
+            <div class="smoothcarousel">
+                <div class="smoothcarousel__wrapper" id="carousel">
+                </div>
+                <div class="smoothcarousel__nav">
+                    <button class="smoothcarousel__nav__button" data-dir="prev">Prev</button>
+                    <button class="smoothcarousel__nav__button" data-dir="next">Next</button>
+                </div>
             </div>
-            <button class="top-rated__button" id="prev-btn">&#8249;</button>
-            <button class="top-rated__button" id="next-btn">&#8250;</button>
         </section>
         <section class="category" id="category-1">
-            <h1 class="category__title">Catégorie 1</h1>
+            <h1 class="category__title">History</h1>
             <div class="category-list">
-                <!-- Contenu des 7 films les mieux notés de la catégorie 1 -->
+                <div class="smoothcarousel">
+                    <div class="smoothcarousel__wrapper" id="carousel">
+                    </div>
+                    <div class="smoothcarousel__nav">
+                        <button class="smoothcarousel__nav__button" data-dir="prev">Prev</button>
+                        <button class="smoothcarousel__nav__button" data-dir="next">Next</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="category" id="category-2">
-            <h1 class="category__title">Catégorie 2</h1>
+            <h1 class="category__title">Crime</h1>
             <div class="category-list">
-                <!-- Contenu des 7 films les mieux notés de la catégorie 2 -->
+                <div class="smoothcarousel">
+                    <div class="smoothcarousel__wrapper" id="carousel">
+                    </div>
+                    <div class="smoothcarousel__nav">
+                        <button class="smoothcarousel__nav__button" data-dir="prev">Prev</button>
+                        <button class="smoothcarousel__nav__button" data-dir="next">Next</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="category" id="category-3">
-            <h1 class="category__title">Catégorie 3</h1>
+            <h1 class="category__title">Adventure</h1>
             <div class="category-list">
-                <!-- Contenu des 7 films les mieux notés de la catégorie 3 -->
+                <div class="smoothcarousel">
+                    <div class="smoothcarousel__wrapper" id="carousel">
+                    </div>
+                    <div class="smoothcarousel__nav">
+                        <button class="smoothcarousel__nav__button" data-dir="prev">Prev</button>
+                        <button class="smoothcarousel__nav__button" data-dir="next">Next</button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Scripts JS -->
-        <script src="js/script.js"></script>
+        <!-- <script src="js/api.js"></script>
+        <script src="js/carousel.js"></script> -->
+        <script src="js/main.js"></script>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal__close">&times;</span>
+            <img class="modal__image" id="modal-image" src="#" alt="Pochette du film">
+            <h2 class="modal__title" id="modal-title">Titre du film</h2>
+            <p class="modal__info" id="modal-genre">Genre complet</p>
+            <p class="modal__info" id="modal-release-date">Date de sortie</p>
+            <p class="modal__info" id="modal-rated">Rated</p>
+            <p class="modal__info" id="modal-imdb-score">Score Imdb</p>
+            <p class="modal__info" id="modal-director">Réalisateur</p>
+            <p class="modal__info" id="modal-actors">Acteurs</p>
+            <p class="modal__info" id="modal-duration">Durée</p>
+            <p class="modal__info" id="modal-country">Pays d'origine</p>
+            <p class="modal__info" id="modal-box-office">Résultat au Box Office</p>
+            <p class="modal__summary" id="modal-summary">Résumé du film</p>
+        </div>
     </div>
 </body>
 

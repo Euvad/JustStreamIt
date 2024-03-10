@@ -2,8 +2,8 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 50px 0 50px;
+    max-width: 1920px;
+    justify-content: space-around;
     &__leftside{
         display: flex;
         align-items: center;

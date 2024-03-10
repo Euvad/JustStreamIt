@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    flex-direction: row;
+    max-width: 1920px;
     height: 400px;
 
     &__leftside {
